@@ -1,6 +1,7 @@
 import { SET_RUNTIME_VARIABLE } from '../constants';
 
 export default function runtime(state = {}, action) {
+  console.log(action,state)
   switch (action.type) {
     case SET_RUNTIME_VARIABLE:
       return {

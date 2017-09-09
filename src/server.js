@@ -30,6 +30,7 @@ import schema from './data/schema';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
+import { initialVotes } from './actions/initialVotes';
 import config from './config';
 
 const app = express();
@@ -95,7 +96,7 @@ app.get(
     res.redirect('/');
   },
 );
-
+// main page 
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
@@ -137,7 +138,11 @@ app.get('*', async (req, res, next) => {
         value: Date.now(),
       }),
     );
-
+    var votes = [
+      {link:'/',title:'test0'},
+      {link:'/about',title:'test1'},
+    ]
+    store.dispatch(initialVotes(...votes))
     // Global (context) variables that can be easily accessed from any React component
     // https://facebook.github.io/react/docs/context.html
     const context = {
@@ -148,7 +153,7 @@ app.get('*', async (req, res, next) => {
         styles.forEach(style => css.add(style._getCss()));
       },
       fetch,
-      // You can access redux through react-redux connect
+      // You can access redux throughz react-redux connect
       store,
       storeSubscription: null,
     };

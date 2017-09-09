@@ -1,0 +1,6 @@
+{
+  "name": "ReduxState",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ReduxState.js"
+}

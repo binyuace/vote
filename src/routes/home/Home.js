@@ -11,41 +11,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
+import Votes from '../../components/votes'
+import { connect } from 'react-redux'
 
+
+const mapStateToProps = state => {
+  console.log(state)
+  return state.votes
+}
+const ShowVotes = connect(mapStateToProps)(Votes) 
 class Home extends React.Component {
-  static propTypes = {
-    news: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
-        content: PropTypes.string,
-      }),
-    ).isRequired,
-  };
+  // static propTypes = {
+  //   votes: PropTypes.arrayOf(
+  //     PropTypes.shape({
+  //       title: PropTypes.string.isRequired,
+  //       link: PropTypes.string.isRequired,
+  //     }),
+  //   ).isRequired,
+  // };
 
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1>React.js News</h1>
-          {this.props.news.map(item =>
-            <article key={item.link} className={s.newsItem}>
-              <h1 className={s.newsTitle}>
-                <a href={item.link}>
-                  {item.title}
-                </a>
-              </h1>
-              <div
-                className={s.newsDesc}
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: item.content }}
-              />
-            </article>,
-          )}
+          <h1>Bin Vote</h1>
+          show store state with context:
+          {JSON.stringify(this.context.store.getState())}
+          <ShowVotes />
         </div>
       </div>
     );
   }
 }
-
+Home.contextTypes = {
+  store: PropTypes.Object
+};
 export default withStyles(s)(Home);
