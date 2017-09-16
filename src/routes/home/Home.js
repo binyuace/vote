@@ -10,16 +10,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { connect } from 'react-redux';
 import s from './Home.css';
-import Votes from '../../components/votes'
-import { connect } from 'react-redux'
+import Polls from '../../components/polls';
+import NewPoll from './NewPoll'
 
-
-const mapStateToProps = state => {
-  console.log(state)
-  return state.votes
-}
-const ShowVotes = connect(mapStateToProps)(Votes) 
+const mapStateToProps = state => {return {polls:state.polls}};
+const ShowPolls = connect(mapStateToProps)(Polls);
 class Home extends React.Component {
   // static propTypes = {
   //   votes: PropTypes.arrayOf(
@@ -37,13 +34,14 @@ class Home extends React.Component {
           <h1>Bin Vote</h1>
           show store state with context:
           {JSON.stringify(this.context.store.getState())}
-          <ShowVotes />
+          <NewPoll />
+          <ShowPolls />
         </div>
       </div>
     );
   }
 }
 Home.contextTypes = {
-  store: PropTypes.Object
+  store: PropTypes.Object,
 };
 export default withStyles(s)(Home);

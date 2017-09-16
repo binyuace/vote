@@ -8,7 +8,7 @@
  */
 
 /* eslint-disable global-require */
-
+import React from 'react'
 // The top-level (parent) route
 const routes = {
   path: '/',
@@ -43,7 +43,10 @@ const routes = {
       path: '/admin',
       load: () => import(/* webpackChunkName: 'admin' */ './admin'),
     },
-
+    {
+      path: '/poll/:poll',
+      load: () => import(/* webpackChunkName: 'admin' */ './poll'),
+    },
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
     {
       path: '*',

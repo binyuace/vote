@@ -24,8 +24,12 @@ class Contact extends React.Component {
           <h1>
             {this.props.title}
           </h1>
-          <a href='https://github.com/binyuace'><p>github</p></a>
-          <a href='https://binvote.herokuapp.com/'><p>heroku</p></a>
+          <a href="https://github.com/binyuace">
+            <p>github</p>
+          </a>
+          <a href="https://binvote.herokuapp.com/">
+            <p>heroku</p>
+          </a>
         </div>
       </div>
     );
