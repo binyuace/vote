@@ -13,9 +13,9 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { connect } from 'react-redux';
 import s from './Home.css';
 import Polls from '../../components/polls';
-import NewPoll from './NewPoll'
+import NewPoll from './NewPoll';
 
-const mapStateToProps = state => {return {polls:state.polls}};
+const mapStateToProps = state => ({ polls: state.polls });
 const ShowPolls = connect(mapStateToProps)(Polls);
 class Home extends React.Component {
   // static propTypes = {
@@ -34,7 +34,7 @@ class Home extends React.Component {
           <h1>Bin Vote</h1>
           show store state with context:
           {JSON.stringify(this.context.store.getState())}
-          <NewPoll />
+          <NewPoll fetch={this.context.fetch}/>
           <ShowPolls />
         </div>
       </div>
@@ -43,5 +43,6 @@ class Home extends React.Component {
 }
 Home.contextTypes = {
   store: PropTypes.Object,
+  fetch: PropTypes.function,
 };
 export default withStyles(s)(Home);

@@ -30,7 +30,7 @@ import schema from './data/schema';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
-import  initialPolls  from './actions/initialPolls';
+import initialPolls from './actions/initialPolls';
 import config from './config';
 
 const app = express();
@@ -96,9 +96,16 @@ app.get(
     res.redirect('/');
   },
 );
-app.get('/logout',(req, res) => {
-  res.clearCookie('id_token')
-  res.redirect('/')
+app.get('/logout', (req, res) => {
+  res.clearCookie('id_token');
+  res.redirect('/');
+});
+
+
+
+app.post('/api/newpoll',(req,res) => {
+  console.log('body',req.body)
+  res.json({url:'bravo'})
 })
 // main page
 //

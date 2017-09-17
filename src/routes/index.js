@@ -8,7 +8,7 @@
  */
 
 /* eslint-disable global-require */
-import React from 'react'
+// import React from 'react';
 // The top-level (parent) route
 const routes = {
   path: '/',

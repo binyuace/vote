@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 
-async function action({ fetch,params }) {
+async function action({ fetch, params }) {
   const resp = await fetch('/graphql', {
     body: JSON.stringify({
       query: '{news{title,link,content}}',
@@ -14,7 +14,9 @@ async function action({ fetch,params }) {
     title: 'Vote',
     component: (
       <Layout>
-        <h1>pool:{params.poll}</h1>
+        <h1>
+          pool:{params.poll}
+        </h1>
       </Layout>
     ),
   };
