@@ -18,7 +18,7 @@ if (process.env.BROWSER) {
 module.exports = {
   // Node.js app
   port: process.env.PORT || 3000,
-
+  url: 'mongodb://bin:syb751021@cluster0-shard-00-00-ukgfo.mongodb.net:27017,cluster0-shard-00-01-ukgfo.mongodb.net:27017,cluster0-shard-00-02-ukgfo.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',
   // API Gateway
   api: {
     // API URL to be used in the client-side code

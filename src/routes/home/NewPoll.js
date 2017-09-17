@@ -1,49 +1,42 @@
-import React from 'react'
-import { connect } from 'react-redux';
+import React from 'react';
 
-let NewPoll = ({ dispatch ,fetch}) => {
-  let input
+const NewPoll = ({ fetch }) => {
+  let input;
   return (
     <div>
       <form
         onSubmit={e => {
-          e.preventDefault()
+          e.preventDefault();
           if (!input.value.trim()) {
-            return
+            return;
           }
-          dispatch(newPollAsync(fetch,input.value))
-          input.value = ''
+					newPollAsync(fetch, input.value)
+          input.value = '';
         }}
       >
         <input
           ref={node => {
-            input = node
+            input = node;
           }}
         />
-        <button type="submit">
-          Add Todo
-        </button>
+        <button type="submit">Add Todo</button>
       </form>
     </div>
-  )
-}
-let postPoll = function(fetch,val){
-	return fetch('/api/newpoll',{
-		method:'POST',
-		body:JSON.stringify({val:val,}),
-	})
-}
-let newPollAsync = function(fetch,val){
-	// console.log(fetch)
-	return dispatch => {
-		return postPoll(fetch,val).then(
-				response => response.json()
-			)	.then(json => {
-					window.location.href = '/poll/'+json.url
-				})
-				.catch(error=>console.error(error))	
-	}
-}
-NewPoll = connect()(NewPoll)
+  );
+};
+const postPoll = function(fetch, val) {
+  return fetch('/api/newpoll', {
+    method: 'POST',
+    body: JSON.stringify({ title:val }),
+  });
+};
+const newPollAsync = function(fetch, val) {
+    postPoll(fetch, val)
+      .then(response => response.json())
+      .then(json => {
+        window.location.href = `/poll/${json.url}`;
+      })
+      .catch(error => console.error(error));
+};
 
-export default NewPoll
+export default NewPoll;

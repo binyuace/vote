@@ -18,6 +18,7 @@ import nodeFetch from 'node-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import PrettyError from 'pretty-error';
+import { MongoClient } from 'mongodb'
 import App from './components/App';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
@@ -32,6 +33,8 @@ import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
 import initialPolls from './actions/initialPolls';
 import config from './config';
+import api from './api'
+
 
 const app = express();
 
@@ -96,17 +99,14 @@ app.get(
     res.redirect('/');
   },
 );
+
 app.get('/logout', (req, res) => {
   res.clearCookie('id_token');
   res.redirect('/');
 });
 
-
-
-app.post('/api/newpoll',(req,res) => {
-  console.log('body',req.body)
-  res.json({url:'bravo'})
-})
+// API created by Bin
+app.use('/api', api) 
 // main page
 //
 // Register API middleware

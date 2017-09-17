@@ -39,8 +39,8 @@ class Navigation extends React.Component {
   }
 }
 Navigation.contextTypes = {
-  store: PropTypes.Object,
-  fetch: PropTypes.function,
+  store: PropTypes.object,
+  fetch: PropTypes.func,
 };
 
 export default withStyles(s)(Navigation);

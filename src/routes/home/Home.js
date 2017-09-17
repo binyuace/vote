@@ -34,7 +34,7 @@ class Home extends React.Component {
           <h1>Bin Vote</h1>
           show store state with context:
           {JSON.stringify(this.context.store.getState())}
-          <NewPoll fetch={this.context.fetch}/>
+          <NewPoll fetch={this.context.fetch} />
           <ShowPolls />
         </div>
       </div>
