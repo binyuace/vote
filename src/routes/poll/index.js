@@ -2,20 +2,17 @@ import React from 'react';
 import Layout from '../../components/Layout';
 
 async function action({ fetch, params }) {
-  const resp = await fetch('/graphql', {
-    body: JSON.stringify({
-      query: '{news{title,link,content}}',
-    }),
+  const response = await fetch(`/api/poll/${params.poll}`, {
+    method: 'GET',
   });
-  const { data } = await resp.json();
-  if (!data || !data.news) throw new Error('Failed to load the news feed.');
+  const result = await response.json();
   return {
     chunks: ['home'],
-    title: 'Vote',
+    title: result.title,
     component: (
       <Layout>
         <h1>
-          pool:{params.poll}
+          poll:{result.title}
         </h1>
       </Layout>
     ),

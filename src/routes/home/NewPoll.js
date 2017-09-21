@@ -10,7 +10,7 @@ const NewPoll = ({ fetch }) => {
           if (!input.value.trim()) {
             return;
           }
-					newPollAsync(fetch, input.value)
+          newPollAsync(fetch, input.value);
           input.value = '';
         }}
       >
@@ -24,19 +24,19 @@ const NewPoll = ({ fetch }) => {
     </div>
   );
 };
-const postPoll = function(fetch, val) {
+function postPoll(fetch, val) {
   return fetch('/api/newpoll', {
     method: 'POST',
-    body: JSON.stringify({ title:val }),
+    body: JSON.stringify({ title: val }),
   });
-};
-const newPollAsync = function(fetch, val) {
-    postPoll(fetch, val)
-      .then(response => response.json())
-      .then(json => {
-        window.location.href = `/poll/${json.url}`;
-      })
-      .catch(error => console.error(error));
-};
+}
+function newPollAsync(fetch, val) {
+  postPoll(fetch, val)
+    .then(response => response.json())
+    .then(json => {
+      window.location.href = `/poll/${json.url}`;
+    })
+    .catch(error => console.error(error));
+}
 
 export default NewPoll;

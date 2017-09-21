@@ -26,8 +26,17 @@ class Home extends React.Component {
   //     }),
   //   ).isRequired,
   // };
-
   render() {
+    let polls = this.props.polls.reverse();
+    // console.log(polls)
+    polls = polls.map(arr =>
+      <h1 key={arr._id}>
+        <a href={`/poll/${arr._id}`}>
+          {arr.title}
+        </a>
+      </h1>,
+    );
+    // console.log(polls)
     return (
       <div className={s.root}>
         <div className={s.container}>
@@ -36,13 +45,14 @@ class Home extends React.Component {
           {JSON.stringify(this.context.store.getState())}
           <NewPoll fetch={this.context.fetch} />
           <ShowPolls />
+          <div>{polls}</div>
         </div>
       </div>
     );
   }
 }
 Home.contextTypes = {
-  store: PropTypes.Object,
-  fetch: PropTypes.function,
+  store: PropTypes.object,
+  fetch: PropTypes.func,
 };
 export default withStyles(s)(Home);

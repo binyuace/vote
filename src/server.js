@@ -18,7 +18,7 @@ import nodeFetch from 'node-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import PrettyError from 'pretty-error';
-import { MongoClient } from 'mongodb'
+// import { MongoClient } from 'mongodb';
 import App from './components/App';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
@@ -33,8 +33,7 @@ import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
 import initialPolls from './actions/initialPolls';
 import config from './config';
-import api from './api'
-
+import api from './api';
 
 const app = express();
 
@@ -106,7 +105,7 @@ app.get('/logout', (req, res) => {
 });
 
 // API created by Bin
-app.use('/api', api) 
+app.use('/api', api);
 // main page
 //
 // Register API middleware
