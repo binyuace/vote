@@ -9,17 +9,17 @@ MongoClient.connect(config.url, (err, db) => {
   else {
     console.log('connected to mongo database, Hooray!!!');
     const polls = db.collection('polls');
+    // create a new poll
     api.post('/newpoll', (req, res) => {
-      // console.log('body', req.body);
       // eslint-disable-line no-shadow
-      polls.insertOne({ title: req.body.title }, (err, result) => {
+      polls.insertOne({ title: req.body.title, votes: [] }, (err, result) => {
         if (err) console.error(err);
         else {
-          // console.log(result)
           res.send({ url: result.insertedId });
         }
       });
     });
+    // get the poll in poll page
     api.get('/poll/:poll', (req, res) => {
       // console.log(req.params.poll);
       polls.findOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
@@ -30,6 +30,7 @@ MongoClient.connect(config.url, (err, db) => {
         }
       });
     });
+    // get all the polls in main page
     api.get('/polls', (req, res) => {
       polls.find({}).toArray((err, result) => {
         if (err) res.sendStatus(404);
@@ -38,6 +39,8 @@ MongoClient.connect(config.url, (err, db) => {
         }
       });
     });
+
+    // end of database connection
   }
 });
 

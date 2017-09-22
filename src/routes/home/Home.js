@@ -10,13 +10,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { connect } from 'react-redux';
 import s from './Home.css';
-import Polls from '../../components/polls';
 import NewPoll from './NewPoll';
 
-const mapStateToProps = state => ({ polls: state.polls });
-const ShowPolls = connect(mapStateToProps)(Polls);
 class Home extends React.Component {
   // static propTypes = {
   //   votes: PropTypes.arrayOf(
@@ -28,7 +24,6 @@ class Home extends React.Component {
   // };
   render() {
     let polls = this.props.polls.reverse();
-    // console.log(polls)
     polls = polls.map(arr =>
       <h1 key={arr._id}>
         <a href={`/poll/${arr._id}`}>
@@ -36,7 +31,6 @@ class Home extends React.Component {
         </a>
       </h1>,
     );
-    // console.log(polls)
     return (
       <div className={s.root}>
         <div className={s.container}>
@@ -44,7 +38,6 @@ class Home extends React.Component {
           show store state with context:
           {JSON.stringify(this.context.store.getState())}
           <NewPoll fetch={this.context.fetch} />
-          <ShowPolls />
           <div>{polls}</div>
         </div>
       </div>

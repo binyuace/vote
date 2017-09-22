@@ -31,7 +31,6 @@ import schema from './data/schema';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
-import initialPolls from './actions/initialPolls';
 import config from './config';
 import api from './api';
 
@@ -148,11 +147,6 @@ app.get('*', async (req, res, next) => {
         value: Date.now(),
       }),
     );
-    const polls = [
-      { link: '/', title: 'test0' },
-      { link: '/about', title: 'test1' },
-    ];
-    store.dispatch(initialPolls(polls));
     // Global (context) variables that can be easily accessed from any React component
     // https://facebook.github.io/react/docs/context.html
     const context = {
