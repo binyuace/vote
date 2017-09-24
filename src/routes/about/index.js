@@ -8,17 +8,22 @@
  */
 
 import React from 'react';
+import { connect } from 'react-redux';
 import Layout from '../../components/Layout';
-import Page from '../../components/Page';
+import ReduxState from '../../components/ReduxState';
 import about from './about.md';
 
+const mapStateToProps = state => ({
+  thestate: state,
+});
+const ShowRedux = connect(mapStateToProps)(ReduxState);
 function action() {
   return {
     chunks: ['about'],
     title: about.title,
     component: (
       <Layout>
-        <Page {...about} />
+        <ShowRedux />
       </Layout>
     ),
   };

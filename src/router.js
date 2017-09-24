@@ -12,6 +12,7 @@ import routes from './routes';
 
 export default new Router(routes, {
   resolveRoute(context, params) {
+    // console.log('context:', context, 'params:', params);
     if (typeof context.route.load === 'function') {
       return context.route
         .load()

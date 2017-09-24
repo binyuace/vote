@@ -18,7 +18,8 @@ if (process.env.BROWSER) {
 module.exports = {
   // Node.js app
   port: process.env.PORT || 3000,
-
+  url:
+    'mongodb://bin:syb751021@cluster0-shard-00-00-ukgfo.mongodb.net:27017,cluster0-shard-00-01-ukgfo.mongodb.net:27017,cluster0-shard-00-02-ukgfo.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',
   // API Gateway
   api: {
     // API URL to be used in the client-side code
@@ -44,9 +45,9 @@ module.exports = {
 
     // https://developers.facebook.com/
     facebook: {
-      id: process.env.FACEBOOK_APP_ID || '186244551745631',
+      id: process.env.FACEBOOK_APP_ID || '115153012532745',
       secret:
-        process.env.FACEBOOK_APP_SECRET || 'a970ae3240ab4b9b8aae0f9f0661c6fc',
+        process.env.FACEBOOK_APP_SECRET || 'd98e103e037ee261e5f70975717d641a',
     },
 
     // https://cloud.google.com/console/project

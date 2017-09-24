@@ -12,19 +12,17 @@ import Home from './Home';
 import Layout from '../../components/Layout';
 
 async function action({ fetch }) {
-  const resp = await fetch('/graphql', {
-    body: JSON.stringify({
-      query: '{news{title,link,content}}',
-    }),
+  const resp = await fetch('/api/polls', {
+    method: 'GET',
   });
-  const { data } = await resp.json();
-  if (!data || !data.news) throw new Error('Failed to load the news feed.');
+  const data = await resp.json();
+  if (!data) throw new Error('Failed to load the polls feed.');
   return {
     chunks: ['home'],
-    title: 'React Starter Kit',
+    title: 'Vote',
     component: (
       <Layout>
-        <Home news={data.news} />
+        <Home polls={data} />
       </Layout>
     ),
   };

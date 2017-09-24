@@ -9,12 +9,15 @@
 
 import React from 'react';
 import cx from 'classnames';
+import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+// import { connect } from 'react-redux';
 import s from './Navigation.css';
 import Link from '../Link';
 
 class Navigation extends React.Component {
   render() {
+    // const fetch = this.context.fetch.bind(this);
     return (
       <div className={s.root} role="navigation">
         <Link className={s.link} to="/about">
@@ -24,16 +27,20 @@ class Navigation extends React.Component {
           Contact
         </Link>
         <span className={s.spacer}> | </span>
-        <Link className={s.link} to="/login">
-          Log in
-        </Link>
-        <span className={s.spacer}>or</span>
-        <Link className={cx(s.link, s.highlight)} to="/register">
-          Sign up
-        </Link>
+        {this.context.store.getState().user !== null
+          ? <a className={cx(s.link, s.highlight)} href="/logout">
+              Log Out
+            </a>
+          : <Link className={s.link} to="/login">
+              Log in
+            </Link>}
       </div>
     );
   }
 }
+Navigation.contextTypes = {
+  store: PropTypes.object,
+  fetch: PropTypes.func,
+};
 
 export default withStyles(s)(Navigation);

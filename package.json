@@ -6,7 +6,12 @@
     "node": ">=6.5",
     "npm": ">=3.10"
   },
-  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "bluebird": "^3.5.0",
@@ -21,6 +26,7 @@
     "history": "^4.6.3",
     "isomorphic-style-loader": "^4.0.0",
     "jsonwebtoken": "^7.4.1",
+    "mongodb": "^2.2.31",
     "node-fetch": "^1.7.1",
     "normalize.css": "^7.0.0",
     "passport": "^0.4.0",
@@ -32,6 +38,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1",
+    "redux-actions": "^2.2.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "sequelize": "^4.2.1",
@@ -138,7 +145,9 @@
     ],
     "env": {
       "test": {
-        "plugins": ["rewire"]
+        "plugins": [
+          "rewire"
+        ]
       }
     },
     "ignore": [
@@ -150,9 +159,18 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx}": ["eslint --fix", "git add"],
-    "*.{json,graphql}": ["prettier --write", "git add"],
-    "*.{css,less,scss,sss}": ["stylelint --fix", "git add"]
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{json,graphql}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{css,less,scss,sss}": [
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "scripts": {
     "precommit": "lint-staged",

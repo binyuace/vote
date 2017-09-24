@@ -18,6 +18,7 @@ import nodeFetch from 'node-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import PrettyError from 'pretty-error';
+// import { MongoClient } from 'mongodb';
 import App from './components/App';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
@@ -31,6 +32,7 @@ import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
 import config from './config';
+import api from './api';
 
 const app = express();
 
@@ -96,6 +98,14 @@ app.get(
   },
 );
 
+app.get('/logout', (req, res) => {
+  res.clearCookie('id_token');
+  res.redirect('/');
+});
+
+// API created by Bin
+app.use('/api', api);
+// main page
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
@@ -137,7 +147,6 @@ app.get('*', async (req, res, next) => {
         value: Date.now(),
       }),
     );
-
     // Global (context) variables that can be easily accessed from any React component
     // https://facebook.github.io/react/docs/context.html
     const context = {
@@ -148,7 +157,7 @@ app.get('*', async (req, res, next) => {
         styles.forEach(style => css.add(style._getCss()));
       },
       fetch,
-      // You can access redux through react-redux connect
+      // You can access redux throughz react-redux connect
       store,
       storeSubscription: null,
     };
