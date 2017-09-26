@@ -1,0 +1,19 @@
+Script started on Mon Sep 25 13:56:37 2017
+[Oh My Zsh] Would you like to check for updates? [Y/n]: n
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hbbab  mmake  m  vvibash    v  mmkbash[?1l>[?2004l
+]2;mkbash]1;mkbashzsh: command not found: mkbash
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hvviv  ccat /usr/local. /sbin/l icloud[?1l>[?2004l
+]2;cat /usr/local/sbin/icloud]1;cat#!/bin/bash
+mv ${1} /Users/king/Library/Mobile\ Documents/com~apple~CloudDocs${2}
+
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsDOMUtils.js    config.js      passport.js    [1m[36mstore[39;49m[0m
+[1m[36mactions[39;49m[0m        [1m[36mconstants[39;49m[0m      [1m[36mreducers[39;49m[0m       typescript
+api.js         createFetch.js router.js
+client.js      [1m[36mdata[39;49m[0m           [1m[36mroutes[39;49m[0m
+[1m[36mcomponents[39;49m[0m     history.js     server.js
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hccd c  ccd c  ttouch routes. /
+[1;31mabout[0m/      [1;31merror[0m/      [1;31mlogin[0m/      [1;31mprivacy[0m/              
+[1;31madmin[0m/      [1;31mhome[0m/       [1;31mnot-found[0m/  [1;31mregister[0m/             
+[J[1;31mcontact[0m/    [Jindex.js    [J[1;31mpoll[0m/       [J                    [3A[0m[27m[24m[22Ctouch routes/[Kpoll. /newvote   V  Votea Async.js[?1l>[?2004l
+[J]2;touch routes/poll/newVoteAsync.js]1;touch[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hllsl  /
