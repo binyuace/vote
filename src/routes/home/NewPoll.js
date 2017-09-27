@@ -19,7 +19,7 @@ const NewPoll = ({ fetch }) => {
             input = node;
           }}
         />
-        <button type="submit">Add Todo</button>
+        <button type="submit">New Poll</button>
       </form>
     </div>
   );

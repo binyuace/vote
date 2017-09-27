@@ -1,0 +1,470 @@
+Script started on Mon Sep 25 13:56:37 2017
+[Oh My Zsh] Would you like to check for updates? [Y/n]: n
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hbbab  mmake  m  vvibash    v  mmkbash[?1l>[?2004l
+]2;mkbash]1;mkbashzsh: command not found: mkbash
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hvviv  ccat /usr/local. /sbin/l icloud[?1l>[?2004l
+]2;cat /usr/local/sbin/icloud]1;cat#!/bin/bash
+mv ${1} /Users/king/Library/Mobile\ Documents/com~apple~CloudDocs${2}
+
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsDOMUtils.js    config.js      passport.js    [1m[36mstore[39;49m[0m
+[1m[36mactions[39;49m[0m        [1m[36mconstants[39;49m[0m      [1m[36mreducers[39;49m[0m       typescript
+api.js         createFetch.js router.js
+client.js      [1m[36mdata[39;49m[0m           [1m[36mroutes[39;49m[0m
+[1m[36mcomponents[39;49m[0m     history.js     server.js
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hccd c  ccd c  ttouch routes. /
+[1;31mabout[0m/      [1;31merror[0m/      [1;31mlogin[0m/      [1;31mprivacy[0m/              
+[1;31madmin[0m/      [1;31mhome[0m/       [1;31mnot-found[0m/  [1;31mregister[0m/             
+[J[1;31mcontact[0m/    [Jindex.js    [J[1;31mpoll[0m/       [J                    [3A[0m[27m[24m[22Ctouch routes/[Kpoll. /newvote   V  Votea Async.js[?1l>[?2004l
+[J]2;touch routes/poll/newVoteAsync.js]1;touch[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hllsl  //git  /  ggit commit       add ,[?1l>[?2004l
+]2;git add ,]1;gitfatal: pathspec ',' did not match any files
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004ha ggit add .[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m"hi everyone          update with           AQdd   dd new vote fun    function" "i"n"p"p"" "  "p"o"l"l" " [K[A[66Cp"a"ag"e"[1C"[?1l>[?2004l
+[0m[27m[24m[Jdquote> [K[?1h=[?2004h"[?1l>[?2004l
+]2;git commit -m"Add new vote function in poll page"" "]1;githusky > npm run -s precommit (node v4.1.2)
+
+[?25l [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠙[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠹[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠸[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠼[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠴[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠦[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠧[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠇[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠏[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠋[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠙[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠹[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠸[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠼[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠴[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠦[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠧[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠇[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠏[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠋[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠙[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠹[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠸[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠼[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠴[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠦[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠧[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠇[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠏[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠋[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠙[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠹[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠸[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠼[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠴[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠦[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠧[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠇[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠏[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠋[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠙[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠹[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠸[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠼[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠴[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠦[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠧[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠇[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [33m⠏[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25l[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K[1A[1000D[K [33m❯[39m Running tasks for *.{js,jsx}
+   [31m✖[39m eslint --fix
+     git add
+ [33m↓[39m Running tasks for *.{json,graphql} [2m[skipped][22m
+   [90m→ No staged files match *.{json,graphql}[39m
+ [33m↓[39m Running tasks for *.{css,less,scss,sss} [2m[skipped][22m
+   [90m→ No staged files match *.{css,less,scss,sss}[39m
+[?25h🚫 eslint --fix found some errors. Please fix them and try committing again.
+
+[4m/Users/king/Documents/vote/src/routes/poll/index.js[24m
+  [2m29:27[22m  [31merror[39m  'message' is missing in props validation  [2mreact/prop-types[22m
+
+[4m/Users/king/Documents/vote/src/routes/poll/Votes.js[24m
+  [2m3:18[22m  [31merror[39m  'votes' is missing in props validation        [2mreact/prop-types[22m
+  [2m3:25[22m  [31merror[39m  'handleClick' is missing in props validation  [2mreact/prop-types[22m
+  [2m5:15[22m  [31merror[39m  Do not use Array index in keys                [2mreact/no-array-index-key[22m
+
+[4m/Users/king/Documents/vote/src/routes/poll/NewVote.js[24m
+   [2m5:20[22m  [31merror[39m  'fetch' is missing in props validation         [2mreact/prop-types[22m
+   [2m5:27[22m  [31merror[39m  'params' is missing in props validation        [2mreact/prop-types[22m
+  [2m11:24[22m  [31merror[39m  'handleSubmit' is missing in props validation  [2mreact/prop-types[22m
+
+[4m/Users/king/Documents/vote/src/routes/home/NewPoll.js[24m
+   [2m3:20[22m  [31merror[39m  'fetch' is missing in props validation         [2mreact/prop-types[22m
+  [2m13:11[22m  [31merror[39m  'newPollAsync' was used before it was defined  [2mno-use-before-define[22m
+
+[4m/Users/king/Documents/vote/src/api.js[24m
+  [2m10:5[22m   [31merror[39m  Unexpected console statement                           [2mno-console[22m
+  [2m20:10[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m31:58[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m41:58[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m45:11[22m  [31merror[39m  Assignment to property of function parameter 'result'  [2mno-param-reassign[22m
+  [2m46:68[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m58:58[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m63:68[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+  [2m75:31[22m  [31merror[39m  'err' is already declared in the upper scope           [2mno-shadow[22m
+
+[31m[1m✖ 18 problems (18 errors, 0 warnings)[22m[39m
+[31m[1m[22m[39m
+
+
+[?25h
+husky > pre-commit hook failed (add --no-verify to bypass)
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;31m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit commit om  -m"Add new vote function in poll page""[K
+"[K[A[4C[K[1B[K[K[A[4C --no-verig fy[?1l>[?2004l[1B]2;git commit -m"Add new vote function in poll page" --no-verify]1;git[master 1a76c1b] Add new vote function in poll page
+ 10 files changed, 290 insertions(+), 141 deletions(-)
+ create mode 100644 src/actions/newVoteAsync.js
+ rewrite src/actions/voteAsync.js (77%)
+ rewrite src/reducers/poll.js (68%)
+ create mode 100644 src/routes/poll/NewVote.js
+ rewrite src/routes/poll/index.js (66%)
+ create mode 100644 src/typescript
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit asd   push[?1l>[?2004l
+]2;git push]1;gitCounting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects:   5% (1/18)   Compressing objects:  11% (2/18)   Compressing objects:  16% (3/18)   Compressing objects:  22% (4/18)   Compressing objects:  27% (5/18)   Compressing objects:  33% (6/18)   Compressing objects:  38% (7/18)   Compressing objects:  44% (8/18)   Compressing objects:  50% (9/18)   Compressing objects:  55% (10/18)   Compressing objects:  61% (11/18)   Compressing objects:  66% (12/18)   Compressing objects:  72% (13/18)   Compressing objects:  77% (14/18)   Compressing objects:  83% (15/18)   Compressing objects:  88% (16/18)   Compressing objects:  94% (17/18)   Compressing objects: 100% (18/18)   Compressing objects: 100% (18/18), done.
+Writing objects:   5% (1/19)   Writing objects:  10% (2/19)   Writing objects:  15% (3/19)   Writing objects:  21% (4/19)   Writing objects:  31% (6/19)   Writing objects:  36% (7/19)   Writing objects:  42% (8/19)   Writing objects:  47% (9/19)   Writing objects:  52% (10/19)   Writing objects:  57% (11/19)   Writing objects:  63% (12/19)   Writing objects:  68% (13/19)   Writing objects:  73% (14/19)   Writing objects:  78% (15/19)   Writing objects:  84% (16/19)   Writing objects:  89% (17/19)   Writing objects:  94% (18/19)   Writing objects: 100% (19/19)   Writing objects: 100% (19/19), 3.92 KiB | 0 bytes/s, done.
+Total 19 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/12)   [Kremote: Resolving deltas:   8% (1/12)   [Kremote: Resolving deltas:  16% (2/12)   [Kremote: Resolving deltas:  25% (3/12)   [Kremote: Resolving deltas:  41% (5/12)   [Kremote: Resolving deltas:  50% (6/12)   [Kremote: Resolving deltas:  58% (7/12)   [Kremote: Resolving deltas:  66% (8/12)   [Kremote: Resolving deltas:  75% (9/12)   [Kremote: Resolving deltas:  83% (10/12)   [Kremote: Resolving deltas:  91% (11/12)   [Kremote: Resolving deltas: 100% (12/12)   [Kremote: Resolving deltas: 100% (12/12), completed with 11 local objects.[K
+To https://github.com/binyuace/vote.git
+   b5b7aaa..1a76c1b  master -> master
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004httouch routes/poll/newVoteAsync.js               Share .js[?1l>[?2004l
+]2;touch routes/poll/Share.js]1;touch[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggrep m clie     -r client .[?1l>[?2004l
+]2;grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} -r client .]1;grep./client.js:  // Universal HTTP [01;31m[Kclient[m[K
+./client.js:    // Do a full page reload if error occurs during [01;31m[Kclient[m[K-side navigation
+./client.js:// Handle [01;31m[Kclient[m[K-side navigation by using HTML5 History API
+./components/App.js:  // Universal HTTP [01;31m[Kclient[m[K
+./config.js:    'Do not import `config.js` from inside the [01;31m[Kclient[m[K-side code.',
+./config.js:    // API URL to be used in the [01;31m[Kclient[m[K-side code
+./config.js:    [01;31m[Kclient[m[KUrl: process.env.API_CLIENT_URL || '',
+./passport.js:      [01;31m[Kclient[m[KID: config.auth.facebook.id,
+./passport.js:      [01;31m[Kclient[m[KSecret: config.auth.facebook.secret,
+./server.js:    // Universal HTTP [01;31m[Kclient[m[K
+./server.js:    data.scripts.push(assets.[01;31m[Kclient[m[K.js);
+./server.js:      apiUrl: config.api.[01;31m[Kclient[m[KUrl,
+./store/logger/package.json:  "browser": "./logger.[01;31m[Kclient[m[K.js"
+./typescript:[01;31m[Kclient[m[K.js      [1m[36mdata[39;49m[0m           [1m[36mroutes[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit add .[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggti  g gir  t aoc   status[?1l>[?2004l
+]2;git status]1;gitOn branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   api.js[m
+	[32mmodified:   client.js[m
+	[32mmodified:   constants/index.js[m
+	[32mmodified:   routes/poll/NewVote.js[m
+	[32mnew file:   routes/poll/Share.js[m
+	[32mmodified:   routes/poll/index.js[m
+	[32mmodified:   typescript[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    ../nothing[m
+	[31mmodified:   ../package.json[m
+	[31mmodified:   typescript[m
+	[31mmodified:   ../yarn.lock[m
+
+[1m[7m%[27m[1m[0m                                                                   ]2;king@Air: ~/Documents/vote/src]1;..ents/vote/src[0m[27m[24m[J[01;32m➜  [36msrc[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m         g  

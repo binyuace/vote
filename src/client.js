@@ -117,6 +117,7 @@ async function onLocationChange(location, action) {
     // and whose action method returns anything other than `undefined`.
     const route = await router.resolve({
       ...context,
+      location: window.location.href,
       path: location.pathname,
       query: queryString.parse(location.search),
     });
@@ -130,7 +131,6 @@ async function onLocationChange(location, action) {
       history.replace(route.redirect);
       return;
     }
-
     appInstance = ReactDOM.render(
       <App context={context}>
         {route.component}
