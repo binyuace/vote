@@ -1,12 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {
+  ShareButtons,
+  generateShareIcon
+} from 'react-share';
 import Layout from '../../components/Layout';
 import initialPoll from '../../actions/initialPoll';
 import Poll from '../../components/Poll';
 import voteAsync from '../../actions/voteAsync';
 import Votes from './Votes';
-import NewVote from './NewVote'
-async function action({ fetch, params, store }) {
+import NewVote from './NewVote';
+// import Share from './Share'
+
+async function action({ fetch, params, store, location}) {
   // initializing the state with fetch
   const response = await fetch(`/api/poll/${params.poll}`, {
     method: 'GET',
@@ -32,6 +38,14 @@ async function action({ fetch, params, store }) {
   const Message = connect(state => ({ message: state.poll.messageAsync }))(
     MessageAsync,
   );
+  const {
+    TwitterShareButton,
+  } = ShareButtons;
+  const TwitterIcon = generateShareIcon('twitter');
+  const Share = ()=><TwitterShareButton title={result.title} url={location}>
+      <TwitterIcon size={32} round={false} />
+    </TwitterShareButton> 
+
   return {
     chunks: ['home'],
     title: result.title,
@@ -47,7 +61,8 @@ async function action({ fetch, params, store }) {
         <ShowPollState />
         <AllVotes />
         <Message />
-        <NewVote fetch={fetch} params={params}/>
+        <NewVote fetch={fetch} params={params} />
+        <Share />
       </Layout>
     ),
   };

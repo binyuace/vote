@@ -40,41 +40,33 @@ MongoClient.connect(config.url, (err, db) => {
     api.get('/poll/:poll/vote/:idx', (req, res) => {
       polls.findOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
         if (err) {
-        	res.sendStatus(404)
+          res.sendStatus(404);
         } else {
           result.votes[req.params.idx].number += 1;
-          polls.update(
-            { _id: ObjectId(req.params.poll) },
-            result,
-            (err) => {
-              if (err) {
-                res.sendStatus(404);
-              } else {
-                res.send(result);
-              }
-            },
-          );
+          polls.update({ _id: ObjectId(req.params.poll) }, result, err => {
+            if (err) {
+              res.sendStatus(404);
+            } else {
+              res.send(result);
+            }
+          });
         }
       });
     });
     // post a new vote
-		api.get('/poll/:poll/newvote/:vote', (req, res) => {
+    api.get('/poll/:poll/newvote/:vote', (req, res) => {
       polls.findOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
         if (err) {
-        	res.sendStatus(404)
+          res.sendStatus(404);
         } else {
-          result.votes.push({name:req.params.vote,number:0});
-          polls.update(
-            { _id: ObjectId(req.params.poll) },
-            result,
-            (err) => {
-              if (err) {
-                res.sendStatus(404);
-              } else {
-                res.send(result);
-              }
-            },
-          );
+          result.votes.push({ name: req.params.vote, number: 0 });
+          polls.update({ _id: ObjectId(req.params.poll) }, result, err => {
+            if (err) {
+              res.sendStatus(404);
+            } else {
+              res.send(result);
+            }
+          });
         }
       });
     });
