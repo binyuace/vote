@@ -1,16 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-  ShareButtons,
-  generateShareIcon
-} from 'react-share';
 import Layout from '../../components/Layout';
 import initialPoll from '../../actions/initialPoll';
 import Poll from '../../components/Poll';
 import voteAsync from '../../actions/voteAsync';
 import Votes from './Votes';
 import NewVote from './NewVote';
-// import Share from './Share'
+import Share from './Share'
 
 async function action({ fetch, params, store, location}) {
   // initializing the state with fetch
@@ -38,13 +34,6 @@ async function action({ fetch, params, store, location}) {
   const Message = connect(state => ({ message: state.poll.messageAsync }))(
     MessageAsync,
   );
-  const {
-    TwitterShareButton,
-  } = ShareButtons;
-  const TwitterIcon = generateShareIcon('twitter');
-  const Share = ()=><TwitterShareButton title={result.title} url={location}>
-      <TwitterIcon size={32} round={false} />
-    </TwitterShareButton> 
 
   return {
     chunks: ['home'],
@@ -62,7 +51,7 @@ async function action({ fetch, params, store, location}) {
         <AllVotes />
         <Message />
         <NewVote fetch={fetch} params={params} />
-        <Share />
+        <Share title={result.title} location={location}/>
       </Layout>
     ),
   };
