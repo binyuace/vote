@@ -1,6 +1,6 @@
 import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
-import * as requestIp from 'request-ip' 
+import * as requestIp from 'request-ip';
 import config from './config';
 
 const api = express.Router();
@@ -40,23 +40,21 @@ MongoClient.connect(config.url, (err, db) => {
     });
     // vote !!!
     api.get('/poll/:poll/vote/:idx', (req, res) => {
-      const clientIp = requestIp.getClientIp(req)
-      console.log(clientIp)
+      const clientIp = requestIp.getClientIp(req);
       polls.findOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
         if (err) {
           res.sendStatus(404);
         } else {
-          if (result.voters && 
-              result.voters.indexOf(clientIp) === -1 ){
+          if (result.voters && result.voters.indexOf(clientIp) === -1) {
             result.votes[req.params.idx].number += 1;
-          } 
-          if (!(result.voters)) {
+          }
+          if (!result.voters) {
             result.votes[req.params.idx].number += 1;
           }
           if (result.voters) {
-            result.voters.push(clientIp)
+            result.voters.push(clientIp);
           } else {
-            result.voters = [clientIp,]
+            result.voters = [clientIp];
           }
 
           polls.update({ _id: ObjectId(req.params.poll) }, result, err => {

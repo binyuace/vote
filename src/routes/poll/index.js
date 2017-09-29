@@ -51,11 +51,12 @@ async function action({ fetch, params, store, location }) {
         <ShowPollState />
         <AllVotes />
         <Message />
-        <NewVote fetch={fetch} params={params} store={store}/>
+        <NewVote fetch={fetch} params={params} store={store} />
         <Share title={result.title} location={location} />
-        {(store.getState().user !== null 
-          && store.getState().poll.creatorId === store.getState().user.id)?
-        <Remove fetch={fetch} params={params} />:null}
+        {store.getState().user !== null &&
+        store.getState().poll.creatorId === store.getState().user.id
+          ? <Remove fetch={fetch} params={params} />
+          : null}
       </Layout>
     ),
   };
