@@ -1,12 +1,17 @@
 import React from 'react';
 
-const NewPoll = ({ fetch }) => {
+const NewPoll = ({ fetch ,store}) => {
   let input;
   return (
     <div>
       <form
         onSubmit={e => {
           e.preventDefault();
+          if (store.getState().user === null){
+            alert('you need to log in first')
+            window.location.href = '/login'
+            return
+          }
           if (!input.value.trim()) {
             return;
           }

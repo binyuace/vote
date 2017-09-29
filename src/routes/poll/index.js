@@ -7,7 +7,8 @@ import voteAsync from '../../actions/voteAsync';
 import Votes from './Votes';
 import NewVote from './NewVote';
 import Share from './Share';
-import Remove from './Remove'
+import Remove from './Remove';
+
 async function action({ fetch, params, store, location }) {
   // initializing the state with fetch
   const response = await fetch(`/api/poll/${params.poll}`, {
@@ -50,9 +51,11 @@ async function action({ fetch, params, store, location }) {
         <ShowPollState />
         <AllVotes />
         <Message />
-        <NewVote fetch={fetch} params={params} />
+        <NewVote fetch={fetch} params={params} store={store}/>
         <Share title={result.title} location={location} />
-        <Remove fetch={fetch} params={params}/>
+        {(store.getState().user !== null 
+          && store.getState().poll.creatorId === store.getState().user.id)?
+        <Remove fetch={fetch} params={params} />:null}
       </Layout>
     ),
   };

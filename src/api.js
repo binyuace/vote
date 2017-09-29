@@ -1,5 +1,6 @@
 import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
+import * as requestIp from 'request-ip' 
 import config from './config';
 
 const api = express.Router();
@@ -16,6 +17,7 @@ MongoClient.connect(config.url, (err, db) => {
         {
           title: req.body.title,
           votes: [{ name: 'a', number: 1 }, { name: 'b', number: 2 }],
+          voters: [],
         },
         (err, result) => {
           if (err) console.error(err);
@@ -38,11 +40,25 @@ MongoClient.connect(config.url, (err, db) => {
     });
     // vote !!!
     api.get('/poll/:poll/vote/:idx', (req, res) => {
+      const clientIp = requestIp.getClientIp(req)
+      console.log(clientIp)
       polls.findOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
         if (err) {
           res.sendStatus(404);
         } else {
-          result.votes[req.params.idx].number += 1;
+          if (result.voters && 
+              result.voters.indexOf(clientIp) === -1 ){
+            result.votes[req.params.idx].number += 1;
+          } 
+          if (!(result.voters)) {
+            result.votes[req.params.idx].number += 1;
+          }
+          if (result.voters) {
+            result.voters.push(clientIp)
+          } else {
+            result.voters = [clientIp,]
+          }
+
           polls.update({ _id: ObjectId(req.params.poll) }, result, err => {
             if (err) {
               res.sendStatus(404);
@@ -70,12 +86,12 @@ MongoClient.connect(config.url, (err, db) => {
         }
       });
     });
-    api.delete('/poll/:poll',(req,res)=>{
-      polls.deleteOne({ _id: ObjectId(req.params.poll) },(err,result)=>{
-        if(err) res.sendStatus(404)
-        else res.sendStatus(200)
-      })
-    })
+    api.delete('/poll/:poll', (req, res) => {
+      polls.deleteOne({ _id: ObjectId(req.params.poll) }, (err, result) => {
+        if (err) res.sendStatus(404);
+        else res.sendStatus(200);
+      });
+    });
     // get all the polls in main page
     api.get('/polls', (req, res) => {
       polls.find({}).toArray((err, result) => {
