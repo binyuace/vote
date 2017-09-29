@@ -70,6 +70,12 @@ MongoClient.connect(config.url, (err, db) => {
         }
       });
     });
+    api.delete('/poll/:poll',(req,res)=>{
+      polls.deleteOne({ _id: ObjectId(req.params.poll) },(err,result)=>{
+        if(err) res.sendStatus(404)
+        else res.sendStatus(200)
+      })
+    })
     // get all the polls in main page
     api.get('/polls', (req, res) => {
       polls.find({}).toArray((err, result) => {

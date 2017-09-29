@@ -29,10 +29,12 @@ class Navigation extends React.Component {
         <span className={s.spacer}> | </span>
         {this.context.store.getState().user !== null
           ? <span>
-            <Link className={s.link} to="/mypolls">My Polls</Link>
-            <a className={cx(s.link, s.highlight)} href="/logout">
-              Log Out
-            </a>
+              <Link className={s.link} to="/mypolls">
+                My Polls
+              </Link>
+              <a className={cx(s.link, s.highlight)} href="/logout">
+                Log Out
+              </a>
             </span>
           : <Link className={s.link} to="/login">
               Log in
