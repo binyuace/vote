@@ -10,14 +10,19 @@
 import React from 'react';
 import {Pie} from 'react-chartjs-2';
 export default React.createClass({
-
   render() {
   	const votes = this.props.votes
-  	console.log('data',votes)
+  	const voteNumbers = votes.reduce((acc,cur)=>{
+  		return acc+cur.number
+  	},0)
+  	if (voteNumbers === 0){
+  		return <div></div>
+  	}
 		const result = {
 			datasets:[{data:[,]}],
 		}
 		result.labels = []
+		result.datasets[0].label = 'votes'
 		for(let i = 0; i<votes.length;i++) {
 			result.datasets[0].data[i] = votes[i].number
 			result.labels[i]= votes[i].name
@@ -34,18 +39,10 @@ export default React.createClass({
 		for (let j=0; j<votes.length;j++) {
 			result.datasets[0].backgroundColor[j]=getRandomColor()
 		}
-		
-		console.log('result',result)
-  	
-
     return (
       <div>
-        <h2>Pie Example</h2>
-        <Pie data={result} />
+        <Pie data={result}/>
       </div>
     );
   }
 });
-
-
-

@@ -16,7 +16,7 @@ MongoClient.connect(config.url, (err, db) => {
       polls.insertOne(
         {
           title: req.body.title,
-          votes: [{ name: 'a', number: 1 }, { name: 'b', number: 2 }],
+          votes: [],
           voters: [],
         },
         (err, result) => {

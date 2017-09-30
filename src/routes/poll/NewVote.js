@@ -29,7 +29,7 @@ const NewVote = ({ fetch, params, store }) => {
             input = node;
           }}
         />
-        <button type="submit">New Vote</button>
+        <button type="submit">New Option</button>
       </form>
     );
   };

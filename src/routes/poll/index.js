@@ -47,9 +47,9 @@ async function action({ fetch, params, store, location }) {
         <h1>
           poll:{result.title}
           <br />
-          votes:{result.votes.length
-            ? result.votes[0].name
-            : 'no votes curretly'}
+          Options:{result.votes.length
+            ? result.votes.length
+            : 'no Options curretly,feel free to creat options for this poll'}
         </h1>
         
         <BinChart/>
