@@ -18,6 +18,7 @@ MongoClient.connect(config.url, (err, db) => {
           title: req.body.title,
           votes: [],
           voters: [],
+          creatorId:req.user.id
         },
         (err, result) => {
           if (err) console.error(err);

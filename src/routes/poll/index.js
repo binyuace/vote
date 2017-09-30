@@ -8,7 +8,8 @@ import Votes from './Votes';
 import NewVote from './NewVote';
 import Share from './Share';
 import Remove from './Remove';
-import Chart from './Chart'
+import Chart from './Chart';
+
 async function action({ fetch, params, store, location }) {
   // initializing the state with fetch
   const response = await fetch(`/api/poll/${params.poll}`, {
@@ -35,10 +36,10 @@ async function action({ fetch, params, store, location }) {
   const Message = connect(state => ({ message: state.poll.messageAsync }))(
     MessageAsync,
   );
-  const BinChartComponent = ({votes})=>{
-    return <Chart votes={votes}/>
-  }
-  const BinChart = connect(state=>({votes:state.poll.votes}),)(BinChartComponent)
+  const BinChartComponent = ({ votes }) => <Chart votes={votes} />;
+  const BinChart = connect(state => ({ votes: state.poll.votes }))(
+    BinChartComponent,
+  );
   return {
     chunks: ['home'],
     title: result.title,
@@ -51,8 +52,8 @@ async function action({ fetch, params, store, location }) {
             ? result.votes.length
             : 'no Options curretly,feel free to creat options for this poll'}
         </h1>
-        
-        <BinChart/>
+
+        <BinChart />
         <ShowPollState />
         <AllVotes />
         <Message />
