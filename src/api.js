@@ -45,6 +45,7 @@ MongoClient.connect(config.url, (err, db) => {
         if (err) {
           res.sendStatus(404);
         } else {
+          // make sure same ip can only vote once
           if (result.voters && result.voters.indexOf(clientIp) === -1) {
             result.votes[req.params.idx].number += 1;
           }
